@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>210</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Склад проволоки</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QPushButton" name="cmd_in_stock">
+     <property name="text">
+      <string>Передача на склад</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="cmd_Ship">
+     <property name="text">
+      <string>Отгрузки</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="cmd_infoShip">
+     <property name="text">
+      <string>Отгрузки по потребителям</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="cmd_presence">
+     <property name="text">
+      <string>Наличие на складе</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="cmd_Report">
+     <property name="text">
+      <string>Отчет</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="cmd_AnStock">
+     <property name="text">
+      <string>Анализ поступления</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="cmd_AnShip">
+     <property name="text">
+      <string>Анализ отгрузок</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>cmd_in_stock</tabstop>
+  <tabstop>cmd_Ship</tabstop>
+  <tabstop>cmd_infoShip</tabstop>
+  <tabstop>cmd_presence</tabstop>
+  <tabstop>cmd_Report</tabstop>
+  <tabstop>cmd_AnStock</tabstop>
+  <tabstop>cmd_AnShip</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
