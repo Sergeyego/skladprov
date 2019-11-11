@@ -95,14 +95,14 @@ void TableView::save(QString fnam, int dec, bool fitToHeight, Qt::ScreenOrientat
                 QString hCubeell=this->model()->headerData(i,Qt::Horizontal).toString();
                 hCubeell.replace(QChar('\n'),QChar('\n'));
                 ws->writeString(2,m,hCubeell,headerFormat);
-                ws->setColumnWidth(m,m,this->columnWidth(i)/7.0);
+                ws->setColumnWidth(m,m,this->columnWidth(i)/6.0);
                 m++;
             }
         }
 
         if (!this->verticalHeader()->isHidden()){
             m=3;
-            ws->setColumnWidth(1,1,this->verticalHeader()->width()/7.0);
+            ws->setColumnWidth(1,1,this->verticalHeader()->width()/6.0);
             ws->writeBlank(2,1,strFormat);
             for(int j=0;j<rows;j++) {
                 if (!this->isRowHidden(j)) {
