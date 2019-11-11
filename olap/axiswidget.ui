@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>234</width>
-    <height>219</height>
+    <width>232</width>
+    <height>217</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -37,20 +37,12 @@
        <property name="text">
         <string/>
        </property>
-       <property name="icon">
-        <iconset theme="go-up" resource="res.qrc">
-         <normaloff>:/images/up.png</normaloff>:/images/up.png</iconset>
-       </property>
       </widget>
      </item>
      <item>
       <widget class="QToolButton" name="cmdDown">
        <property name="text">
         <string/>
-       </property>
-       <property name="icon">
-        <iconset theme="go-down" resource="res.qrc">
-         <normaloff>:/images/down.png</normaloff>:/images/down.png</iconset>
        </property>
       </widget>
      </item>
@@ -71,8 +63,6 @@
    </item>
   </layout>
  </widget>
- <resources>
-  <include location="res.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

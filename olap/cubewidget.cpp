@@ -7,6 +7,9 @@ CubeWidget::CubeWidget(QString head, QStringList axes, QString qu, int dec, QWid
 {
     ui->setupUi(this);
 
+    ui->cmdUpd->setIcon(QIcon(QApplication::style()->standardIcon(QStyle::SP_BrowserReload)));
+    ui->cmdSave->setIcon(QIcon(QApplication::style()->standardIcon(QStyle::SP_DialogSaveButton)));
+
     QCalendarWidget *begCalendarWidget = new QCalendarWidget(this);
     begCalendarWidget->setFirstDayOfWeek(Qt::Monday);
     ui->dateEditBeg->setCalendarWidget(begCalendarWidget);

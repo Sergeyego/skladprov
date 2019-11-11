@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>854</width>
-    <height>698</height>
+    <width>852</width>
+    <height>696</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -63,10 +63,6 @@
          </property>
          <property name="text">
           <string>Обновить</string>
-         </property>
-         <property name="icon">
-          <iconset theme="view-refresh">
-           <normaloff>.</normaloff>.</iconset>
          </property>
         </widget>
        </item>
