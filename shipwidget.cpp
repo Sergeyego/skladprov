@@ -13,9 +13,10 @@ ShipWidget::ShipWidget(QWidget *parent) :
     updSlot();
     ui->tableView_Ship->setModel(modelShip);
     ui->tableView_Ship->setColumnHidden(0,true);
-    ui->tableView_Ship->setColumnWidth(1,70);
+    ui->tableView_Ship->setColumnWidth(1,50);
     ui->tableView_Ship->setColumnWidth(2,70);
     ui->tableView_Ship->setColumnWidth(3,200);
+    ui->tableView_Ship->setColumnWidth(4,170);
     ui->tableView_Ship->resizeRowsToContents();
     updShipData();
     ui->tableView_ShipData->setModel(modelShipData);

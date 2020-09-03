@@ -67,7 +67,6 @@ FORMS    += mainwidget.ui \
     chdatewidget.ui \
     reportwidget.ui \
     shipwidget.ui \
-    cubewidget.ui \
     db/dblogin.ui \
     olap/axiswidget.ui \
     olap/cubewidget.ui

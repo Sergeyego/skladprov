@@ -49,8 +49,9 @@ ModelViewShip::ModelViewShip(QObject *parent) :
 
 void ModelViewShip::refresh(QDate dbeg, QDate dend)
 {
-    setQuery("select s.id, s.nom_s, s.dat_vid, p.short from sertifikat s "
+    setQuery("select s.id, s.nom_s, s.dat_vid, p.short, t.nam from sertifikat s "
              "inner join poluch p on s.id_pol=p.id "
+             "inner join sert_type t on s.id_type=t.id "
              "inner join (select distinct id_ship from wire_shipment_consist) w on w.id_ship=s.id "
              "where s.dat_vid between '"+dbeg.toString("yyyy.MM.dd")+"' and '"+dend.toString("yyyy.MM.dd")+
              "' order by s.dat_vid, s.nom_s");
@@ -60,6 +61,7 @@ void ModelViewShip::refresh(QDate dbeg, QDate dend)
         setHeaderData(1, Qt::Horizontal,tr("Номер"));
         setHeaderData(2, Qt::Horizontal,tr("Дата"));
         setHeaderData(3, Qt::Horizontal,tr("Получатель"));
+        setHeaderData(4, Qt::Horizontal,tr("Тип отгрузки"));
         emit sigUpd();
     }
 }

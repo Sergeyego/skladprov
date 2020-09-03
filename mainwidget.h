@@ -3,6 +3,11 @@
 
 #include <QWidget>
 #include "olap/cubewidget.h"
+#include "instockwidget.h"
+#include "presencewidget.h"
+#include "infoshipwidget.h"
+#include "reportwidget.h"
+#include "shipwidget.h"
 
 namespace Ui {
 class MainWidget;
@@ -18,6 +23,13 @@ public:
     
 private:
     Ui::MainWidget *ui;
+    InStockWidget *instock;
+    PresenceWidget *presence;
+    InfoShipWidget *infoShip;
+    CubeWidget *pStock;
+    CubeWidget *pShip;
+    ReportWidget *reportWidget;
+    ShipWidget *shipWidget;
 
 private slots:
 };
